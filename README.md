@@ -1,0 +1,2 @@
+# SerializeReferenceTest
+Unity2019.3で追加された[SerializeReference]の動作検証用プロジェクトです
