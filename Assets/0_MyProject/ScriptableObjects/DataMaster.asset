@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d371f22cb7f124385a2ef7bd9ad2d3fe, type: 3}
+  m_Name: DataMaster
+  m_EditorClassIdentifier: 
+  _activeSkills:
+  - _id: slash
+    _name: "\u30B9\u30E9\u30C3\u30B7\u30E5"
+    _amount: 10
+    _executor:
+      id: 0
+  - _id: fire
+    _name: "\u30D5\u30A1\u30A4\u30A2"
+    _amount: 15
+    _executor:
+      id: 1
+  - _id: poison
+    _name: "\u30DD\u30A4\u30BA\u30F3"
+    _amount: 50
+    _executor:
+      id: 2
+  references:
+    version: 1
+    00000000:
+      type: {class: PhysicExecutor, ns: , asm: Assembly-CSharp}
+    00000001:
+      type: {class: MagicExecutor, ns: , asm: Assembly-CSharp}
+    00000002:
+      type: {class: PoisonExecutor, ns: , asm: Assembly-CSharp}
